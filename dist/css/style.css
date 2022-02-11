@@ -9253,7 +9253,6 @@ h6,
 
 body {
   background-color: #050505;
-  position: relative;
 }
 
 .container {
@@ -9959,6 +9958,8 @@ section {
 .jury {
   padding-top: 120px;
   padding-bottom: 80px;
+  position: relative;
+  z-index: 3;
 }
 
 .jury__title {
@@ -22945,7 +22946,7 @@ section {
   }
 
   .promo {
-    padding-top: 70px;
+    padding-top: 157px;
   }
 
   .promo__title {
@@ -23778,7 +23779,7 @@ section {
 
 @media (max-width: 720px) {
   .promo {
-    padding-top: 40px;
+    padding-top: 127px;
   }
 
   .promo__top {
@@ -23837,6 +23838,7 @@ section {
     margin-top: 24px;
     display: flex;
     overflow-y: scroll;
+    overflow-x: visible;
   }
 
   .promo__systemic_spans > span {
@@ -24236,7 +24238,7 @@ section {
   }
 
   .promo {
-    padding-top: 43px;
+    padding-top: 126px;
   }
 
   .promo__img {

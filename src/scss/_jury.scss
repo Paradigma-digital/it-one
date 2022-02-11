@@ -1,6 +1,8 @@
 .jury {
     padding-top: 120px;
     padding-bottom: 80px;
+    position: relative;
+    z-index: 3;
     &__title {
         font-weight: bold;
         font-size: 56px;

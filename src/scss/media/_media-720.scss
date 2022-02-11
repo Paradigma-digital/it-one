@@ -1,6 +1,6 @@
 @media (max-width: 720px) {
     .promo {
-        padding-top: 40px;
+        padding-top: 127px;
         &__top {
             flex-direction: column-reverse;
             align-items: center;
@@ -46,6 +46,7 @@
                 margin-top: 24px;
                 display: flex;
                 overflow-y: scroll;
+                overflow-x: visible;
                 & > span {
                     height: 38px;
                     font-size: 18px;

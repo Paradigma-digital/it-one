@@ -7,6 +7,7 @@ const initFaqTabs = () => {
             item.addEventListener('click', () => {
                 faqItems.forEach(item => {
                     item.querySelector('.faq__item_text').style.display = 'none';
+                    item.classList.remove('open');
                 });
                 if(item.classList.contains('open')) {
                     item.classList.remove('open');
