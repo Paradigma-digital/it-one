@@ -115,13 +115,18 @@
             &:first-child {
                 padding-bottom: 22px;
             }
+            &:not(:last-child) {
+                border-left: 1px dashed #7E3CF5;
+                border-style: dashed;
+            }
         }
         &__figure {
             display: none;
             &-mob {
                 display: block;
                 margin-top: 41px;
-                width: 347px;
+                max-width: 325px;
+                width: 100%;
             }
         }
         &__btn {
@@ -145,7 +150,7 @@
         }
         &__merch {
             height: 344px;
-            background: url(../img/prizes/items/bg-mob.png) center center/ 320px 341px no-repeat;
+            background: url(../img/prizes/items/bg-mob.png) center center/ 320px 355px no-repeat;
             &_img {
                 display: none;
             }

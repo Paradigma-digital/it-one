@@ -9344,7 +9344,7 @@ body {
 .header__link {
   background: transparent;
   margin-left: 44px;
-  transition: background, color 0.3s ease-in-out;
+  transition: all 0.33s ease-out;
 }
 
 .header__link:hover {
@@ -9435,16 +9435,17 @@ body {
   width: 290px;
   height: 62px;
   background: #AAE632;
+  background-color: #AAE632;
   color: #050505;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   border: none;
-  transition: background, color 0.3s ease-in-out;
+  transition: all 0.33s ease-out;
 }
 
 .promo__btn:hover {
-  background: #FF7D25;
+  background-color: #FF7D25;
   color: #FFFFFF;
 }
 
@@ -9737,6 +9738,7 @@ body {
 
 .schedule__item:not(:last-child) {
   border-left: 2px dashed #7E3CF5;
+  border-style: dashed;
 }
 
 .schedule__item_title {
@@ -9760,6 +9762,10 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #050505;
+}
+
+.schedule__item_descr > a {
+  color: #7e3cf5;
 }
 
 .prizes {
@@ -24304,6 +24310,11 @@ body {
     padding-bottom: 22px;
   }
 
+  .schedule__item:not(:last-child) {
+    border-left: 1px dashed #7E3CF5;
+    border-style: dashed;
+  }
+
   .schedule__figure {
     display: none;
   }
@@ -24311,7 +24322,8 @@ body {
   .schedule__figure-mob {
     display: block;
     margin-top: 41px;
-    width: 347px;
+    max-width: 325px;
+    width: 100%;
   }
 
   .schedule__btn {
@@ -24337,7 +24349,7 @@ body {
   }
 
   .no-webp .prizes__merch{
-    background: url(../img/prizes/items/bg-mob.png) center center/320px 341px no-repeat; }
+    background: url(../img/prizes/items/bg-mob.png) center center/320px 355px no-repeat; }
 
   .prizes__merch {
     height: 344px;
@@ -24764,7 +24776,7 @@ body {
 
 @media (max-width: 540px){
 
-  .webp .prizes__merch{ background: url(../img/prizes/items/bg-mob.webp) center center/320px 341px no-repeat; }
+  .webp .prizes__merch{ background: url(../img/prizes/items/bg-mob.webp) center center/320px 355px no-repeat; }
 }
 
 @media (max-width: 540px){

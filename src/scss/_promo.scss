@@ -39,14 +39,15 @@
         width: 290px;
         height: 62px;
         background: #AAE632;
+        background-color: #AAE632;
         color: #050505;
         font-weight: bold;
         font-size: 24px;
         line-height: 30px;
         border: none;
-        transition: background, color 0.3s ease-in-out;
+        transition: all 0.33s ease-out;
         &:hover {
-            background: #FF7D25;
+            background-color: #FF7D25;
             color: #FFFFFF;
         }
     }

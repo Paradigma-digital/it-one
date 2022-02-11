@@ -79,6 +79,7 @@
         }
         &:not(:last-child) {
             border-left: 2px dashed #7E3CF5;
+            border-style: dashed;
         }
         &_title {
             font-weight: bold;
@@ -99,6 +100,9 @@
             font-size: 24px;
             line-height: 30px;
             color: #050505;
+            & > a {
+                color: #7e3cf5;
+            }
         }
     }
 }
