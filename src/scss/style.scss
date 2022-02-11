@@ -53,12 +53,26 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body{
     background-color: #050505;
+	position: relative;
 }
 .container {
     max-width: 1300px !important;
 }
 .f1 {
     flex: 10;
+}
+
+section {
+	// &::before {
+	// 	content: '';
+	// 	display: block;
+	// 	width: 1px;
+	// 	height: 250px;
+	// 	margin-top: -250px;
+	// 	background: red;
+	// }
+	border-top: 130px solid transparent;
+	margin-top: -140px;
 }
 
 @import 'btns';

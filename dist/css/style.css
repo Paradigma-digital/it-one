@@ -9253,6 +9253,7 @@ h6,
 
 body {
   background-color: #050505;
+  position: relative;
 }
 
 .container {
@@ -9261,6 +9262,11 @@ body {
 
 .f1 {
   flex: 10;
+}
+
+section {
+  border-top: 130px solid transparent;
+  margin-top: -140px;
 }
 
 .btn {
@@ -9280,6 +9286,11 @@ body {
   width: 100%;
   padding: 40px 0;
   position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #050505;
+  z-index: 100;
 }
 
 .header__logo_main {
@@ -9341,6 +9352,10 @@ body {
   text-decoration: underline;
 }
 
+.header__nav_item > a.active {
+  color: #AAE632;
+}
+
 .header__link {
   background: transparent;
   margin-left: 44px;
@@ -9386,7 +9401,10 @@ body {
 }
 
 .promo {
-  padding-top: 166px;
+  padding-top: 296px;
+  position: relative;
+  z-index: 1;
+  background: #050505;
 }
 
 .promo__wrapper {
@@ -9632,7 +9650,7 @@ body {
   background: #0092A5;
 }
 
-.promo__systemic__spans {
+.promo__systemic_spans {
   display: none;
 }
 
@@ -9640,6 +9658,8 @@ body {
   padding-top: 129px;
   padding-bottom: 50px;
   background: #FFFFFF;
+  position: relative;
+  z-index: 0;
 }
 
 .schedule__left {
@@ -9769,7 +9789,7 @@ body {
 }
 
 .prizes {
-  height: 978px;
+  height: 1135px;
   padding-top: 120px;
 }
 
@@ -9989,6 +10009,9 @@ body {
 .organizers {
   padding-top: 111px;
   padding-bottom: 81px;
+  position: relative;
+  z-index: 2;
+  background: #050505;
 }
 
 .organizers__title {
@@ -10052,7 +10075,7 @@ body {
 }
 
 .organizers__item_logo.logo-3 {
-  width: 188px;
+  width: 152px;
   height: 45px;
 }
 
@@ -10105,6 +10128,8 @@ body {
 .faq {
   padding: 120px 0;
   background: #FFFFFF;
+  position: relative;
+  z-index: 1;
 }
 
 .faq__title {
@@ -10168,6 +10193,7 @@ body {
   padding-top: 100px;
   padding-bottom: 80px;
   border-bottom: 1px solid #FFF;
+  background: #050505;
 }
 
 .bottom__title {

@@ -1,5 +1,8 @@
 .promo {
-    padding-top: 166px;
+    padding-top: 296px;
+    position: relative;
+    z-index: 1;
+    background: #050505;
     &__wrapper {
         padding-top: 9px;
         max-width: 743px;
@@ -204,7 +207,7 @@
                 background: #0092A5;
             }
         }
-        &__spans {
+        &_spans {
             display: none;
         }
     }

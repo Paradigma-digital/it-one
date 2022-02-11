@@ -1,6 +1,9 @@
 .organizers {
     padding-top: 111px;
     padding-bottom: 81px;
+    position: relative;
+    z-index: 2;
+    background: #050505;
     &__title {
         font-weight: bold;
         font-size: 56px;
@@ -50,7 +53,7 @@
                 margin-left: 9px;
             }
             &.logo-3 {
-                width: 188px;
+                width: 152px;
                 height: 45px;
             }
             &.logo-4 {
