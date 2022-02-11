@@ -1,0 +1,95 @@
+@media (max-width: 1367px) {
+    .container {
+        padding: 0 30px;
+    }
+    .header {
+        &__nav {
+            &_items {
+                padding-left: 20px;
+            }
+            &_item {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        &__link {
+            margin-left: 28px;
+        }
+    }
+
+
+    .promo{
+        &__title {
+            &::before{
+                width: 60px;
+                height: 60px;
+                top: -38px;
+                left: -31px;
+            }
+        }
+        &__label{
+            right: 0px;
+        }
+        &__img {
+            width: 405px;
+        }
+        &__systemic {
+            background: url(../img/promo/systemic.png) 5px 82px/1150px 602px no-repeat;
+        }
+    }
+    .organizers{
+        &__item{
+            width: 100%;
+            &_logo{
+                &.logo-2{
+                    & .pic{
+                        right: -15px;
+                    }
+                }
+            }
+        }
+    }
+    .schedule {
+        &__item {
+            padding-left: 50px;
+        }
+    }
+    .prizes {
+        &__label {
+            right: 20px;
+        }
+    }
+    .jury {
+        &__items {
+            &> .col-3 {
+                width: 25%;
+            }
+        }
+        &__item {
+            &_img {
+                width: 265px;
+                height: 365px;
+            }
+        }
+        
+    }
+    .bottom{
+        &__title{
+            &::before{
+                top: -32px;
+                left: -20px;
+            }
+            &>span {
+                &:before {
+                    top: -11px;
+                    left: -22px;
+                    width: 664px; 
+                }
+            }
+        }
+        &__img {
+            width: 405px;
+        }
+    }
+}

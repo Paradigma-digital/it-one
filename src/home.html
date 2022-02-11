@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Home"
+})
+<body>
+    @@include('html/header.html', {})
+
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-between position-relative promo__top">
+                        <div class="promo__wrapper">
+                            <h1 class="promo__title">
+                                IT_ONE Analyst Cup для&nbsp;<span>системных&nbsp;<br>аналитиков</span>  
+                            </h1>
+                            <p class="promo__subtitle">
+                                Уникальный онлайн-чемпионат! Регистрируйтесь сейчас, чтобы&nbsp;побороться за главный приз и получить оффер в&nbsp;крутую&nbsp;компанию
+                            </p>
+                            <button class="btn promo__btn">
+                                Регистрация
+                            </button>
+                            <p class="promo__descr">
+                                Регистрация открыта до 25 марта
+                            </p>
+                            <span class="promo__wrapper_img"></span>
+
+                        </div>
+
+                        <div class="promo__label">
+                            <span>
+                                общий призовой фонд
+                            </span>
+                            <br>
+                            500 000 ₽
+                        </div>
+                        <img src="@img/promo/480x380.png" alt="" class="promo__img">
+                    </div>
+                </div>
+                <div class="row promo__items">
+                    <div class="col promo__item promo__item-1">
+                        Пять <br> призовых мест
+                    </div>
+                    <div class="col promo__item promo__item-2">
+                        Фирменный мерч <br> в подарок
+                    </div>
+                    <div class="col promo__item promo__item-3">
+                        Оффер <br> в крутую компанию
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col promo__systemic">
+                        <h2 class="promo__systemic_title">
+                            Докажи, что ты монстр системной&nbsp;аналитики
+                        </h2>
+
+                        <span class="item-1">Aналитическая теория</span>
+                        <span class="item-2">REST/SOAP</span>
+                        <span class="item-3">MQ</span>
+                        <span class="item-4">SQL</span>
+                        <span class="item-5">Kafka </span>
+                        <span class="item-6">BPMN/UML нотации </span>
+                        <span class="item-7">Реляционные БД </span>
+                        <span class="item-8">XML/XSD </span>
+                        <span class="item-9">JSON </span>
+
+                        <div class="promo__systemic_spans">
+                            <span class="item-1">Aналитическая теория</span>
+                            <span class="item-2">REST/SOAP</span>
+                            <span class="item-3">MQ</span>
+                            <span class="item-4">SQL</span>
+                            <span class="item-5">Kafka </span>
+                            <span class="item-6">BPMN/UML нотации </span>
+                            <span class="item-7">Реляционные БД </span>
+                            <span class="item-8">XML/XSD </span>
+                            <span class="item-9">JSON </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule" id="schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 schedule__left">
+                        <h2 class="schedule__title">
+                            Расписание
+                        </h2>
+                        <p class="schedule__subtitle">
+                            Чемпионат состоит из 3 раундов. <br>
+                             Победители&nbsp;определяются&nbsp;по сумме баллов.
+                        </p>
+
+                        <div class="schedule__right schedule__right-mob">
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    11 февраля — 25 марта
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Регистрация
+                                </h4>
+                            </div>
+    
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    18 – 25 марта
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Ознакомительный раунд
+                                </h4>
+                                <p class="schedule__item_descr">
+                                    Не влияет на прохождение в следующие этапы, знакомит участников с платформой <a href="#">All&nbsp;Cups</a> и примерами задач. 
+                                </p>
+                            </div>
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    25 марта
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Квалификационный раунд
+                                </h4>
+                                <p class="schedule__item_descr">
+                                    Три задачи с автоматической проверкой, в финал пройдет 75% лучших участников.
+                                </p>
+                            </div>
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    26 — 27 марта
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Финальный раунд
+                                </h4>
+                                <p class="schedule__item_descr">
+                                    Одна объемная задача. Результат проверяется автоматически, а жюри дополнительно оценивает «красоту» решения.
+                                </p>
+                            </div>
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    28 марта — 4 апреля
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Подведение итогов
+                                </h4>
+                                <p class="schedule__item_descr">
+                                    Жюри проверяет работы и выставляет экспертную оценку.
+                                </p>
+                            </div>
+                            <div class="schedule__item">
+                                <h3 class="schedule__item_title">
+                                    5 апреля 
+                                </h3>
+                                <h4 class="schedule__item_subtitle">
+                                    Итоги и награждение
+                                </h4>
+                                <p class="schedule__item_descr">
+                                    Публикация итогов и награждение победителей.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="schedule__figure">
+                            <img src="@img/schedule/schedule-figure.png" alt="">
+                        </div>
+                        <div class="schedule__figure schedule__figure-mob">
+                            <img src="@img/schedule/schedule-figure-mob.png" alt="">
+                        </div>
+                        <button class="btn promo__btn schedule__btn">
+                            Регистрация
+                        </button>
+                        <p class="promo__descr schedule__descr">
+                            Регистрация открыта до 25 марта
+                        </p>
+                    </div>
+                    <div class="col-7 schedule__right">
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                11 февраля — 25 марта
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Регистрация
+                            </h4>
+                        </div>
+
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                18 – 25 марта
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Ознакомительный раунд
+                            </h4>
+                            <p class="schedule__item_descr">
+                                Не влияет на прохождение в следующие этапы, знакомит участников с платформой <a href="#">All&nbsp;Cups</a> и примерами задач. 
+                            </p>
+                        </div>
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                25 марта
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Квалификационный раунд
+                            </h4>
+                            <p class="schedule__item_descr">
+                                Три задачи с автоматической проверкой, в финал пройдет 75% лучших участников.
+                            </p>
+                        </div>
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                26 — 27 марта
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Финальный раунд
+                            </h4>
+                            <p class="schedule__item_descr">
+                                Одна объемная задача. Результат проверяется автоматически, а жюри дополнительно оценивает «красоту» решения.
+                            </p>
+                        </div>
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                28 марта — 4 апреля
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Подведение итогов
+                            </h4>
+                            <p class="schedule__item_descr">
+                                Жюри проверяет работы и выставляет экспертную оценку.
+                            </p>
+                        </div>
+                        <div class="schedule__item">
+                            <h3 class="schedule__item_title">
+                                5 апреля 
+                            </h3>
+                            <h4 class="schedule__item_subtitle">
+                                Итоги и награждение
+                            </h4>
+                            <p class="schedule__item_descr">
+                                Публикация итогов и награждение победителей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prizes" id="prizes">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="prizes__title">
+                            Призы
+                        </h2>
+                    </div>
+                </div>
+                <div class="row prizes__items">
+                    <div class="col-3 col-md-4 prizes__item">
+                        <span>
+                            250 000 ₽
+                        </span>
+                        <br>
+                        1 место
+                    </div>
+                    <div class="col-3 col-md-4 prizes__item item-2">
+                        <span>
+                            150 000 ₽
+                        </span>
+                        <br>
+                        2 место
+                    </div>
+
+                    <div class="col-3 col-md-4 prizes__item item-3">
+                        <span>
+                            100 000 ₽
+                        </span>
+                        <br>
+                        3 место
+                    </div>
+
+
+                    <div class="promo__label prizes__label">
+                        <span>
+                            общий призовой фонд
+                        </span>
+                        <br>
+                        500 000 ₽
+
+                        <img src="@img/prizes/star.svg" alt="star" class="label_img">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col prizes__merch">
+                        <div class="prizes__rectangle">
+                            Фирменный мерч
+                            <span class="item-1"></span>
+                            <span class="item-2"></span>
+                            <span class="item-3"></span>
+                        </div>
+                        <div class="prizes__merch_img">
+                            <img src="img/prizes/items/bg.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="employment" id="employment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="employment__title">
+                            Трудоустройство
+                        </h2>
+                        <p class="employment__subtitle">
+                            Лучшим участникам поступят предложения о работе в крутой технологической компании — IT_ONE.
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="employment__img img-1">
+                            <img src="@img/employment/item-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="employment__img img-2">
+                            <img src="@img/employment/item-2.png" alt="">
+                        </div>
+                        <div class="employment__img img-2-mob">
+                            <img src="@img/employment/item-2-mob.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="employment__wrapper">
+                            <p class="employment__subtitle">
+                                Компания IT_ONE работает над крупнейшими проектами в области цифровой трансформации в России.
+                            </p>
+                            <p class="employment__subtitle">
+                                Присоединившись к команде профессионалов, вы сможете реализовывать амбициозные идеи, ускорять темпы развития цифровизации и менять мир&nbsp;к лучшему!
+                                &nbsp;
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="jury" id="jury">
+            <div class="container">
+                <h2 class="jury__title">
+                    Члены жюри
+                </h2>
+                <div class="row jury__items justify-content-between">
+                    <div class="col-3">
+                        <div class="jury__item">
+                            <div class="jury__item_img">
+                                <img src="@img/jury/photos/photo-1.png" alt="">
+                            </div>
+                            <p class="jury__item_name">
+                                Михайлов Олег
+                            </p>
+                            <p class="jury__item_company">
+                                ведущий разработчик, Wildlings, «БКС Мир Инвестиций»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="jury__item">
+                            <div class="jury__item_img">
+                                <img src="@img/jury/photos/photo-2.png" alt="">
+                            </div>
+                            <p class="jury__item_name">
+                                Кондратьева Мирослава
+                            </p>
+                            <p class="jury__item_company">
+                                руководитель отдела разработки, IT_Selection
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="jury__item">
+                            <div class="jury__item_img">
+                                <img src="@img/jury/photos/photo-3.png" alt="">
+                            </div>
+                            <p class="jury__item_name">
+                                Васильева Ярослава 
+                            </p>
+                            <p class="jury__item_company">
+                                ведущий разработчик, Iron Bank, «БКС Мир Инвестиций»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="jury__item">
+                            <div class="jury__item_img">
+                                <img src="@img/jury/photos/photo-4.png" alt="">
+                            </div>
+                            <p class="jury__item_name">
+                                Артемьев Влад
+                            </p>
+                            <p class="jury__item_company">
+                                ведущий аналитик веба, команда Trading Fronts, «БКС Мир Инвестиций»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="organizers" id="organizers">
+            <div class="container">
+                <h2 class="organizers__title">
+                    Организаторы
+                </h2>
+                <div class="row organizers__items">
+                    <div class="col-6">
+                        <div class="organizers__item">
+                            <div class="organizers__item_logo logo-1">
+                                <img src="@img/organizers/item-1.png" alt="">
+                            </div>
+                            <p class="organizers__item_descr">
+                                Компания разрабатывает ПО для крупных игроков российского бизнеса и ускоряет цифровизацию с помощью новейших подходов&nbsp;и&nbsp;ведущих мировых практик
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="organizers__item">
+                            <div class="organizers__item_logo logo-2">
+                                <img src="@img/organizers/item-2.png" alt="">
+                                <span class="pic">
+                                    <img src="@img/organizers/pic-1.png" alt="">
+                                </span>
+                                
+                            </div>
+                            <p class="organizers__item_descr">
+                                Компания разрабатывает новые высоконагруженные технологические решения для Газпромбанка, внедряет открытые API и&nbsp;развивает искусственный интеллект.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="organizers__item">
+                            <div class="organizers__item_logo logo-3">
+                                <img src="@img/organizers/item-3.svg" alt="">
+                                <span class="pic">
+                                    <img src="@img/organizers/pic-2.png" alt="">
+                                </span>
+                            </div>
+                            <p class="organizers__item_descr">
+                                Современный научно<span> </span>-технологический комплекс по&nbsp;разработке&nbsp;и&nbsp;продвижению новых&nbsp;технологий.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="organizers__item">
+                            <div class="organizers__item_logo logo-4">
+                                <img src="@img/organizers/item-4.png" alt="">
+                            </div>
+                            <p class="organizers__item_descr">
+                                Платформа для проведения ИТ-чемпионатов, технологический бизнес-юнит VK. Специализируется на оценке навыков ИТ&#8211;специалистов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="faq__title">
+                    FAQ
+                </h2>
+                <div class="faq__items">
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            Кто может принять участие в чемпионате?
+                        </button>
+                        <p class="faq__item_text">
+                            Участниками могут быть физические лица, достигшие на момент начала проведения чемпионата 18 лет, а также являющиеся гражданами РФ. Лица, не являющиеся налоговыми резидентами РФ не смогут претендовать на выплату денежного приза.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            Участие командное или индивидуальное?
+                        </button>
+                        <p class="faq__item_text">
+                            Данный чемпионат предполагает индивидуальное участие.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            В какие сроки проходит регистрация на чемпионат?
+                        </button>
+                        <p class="faq__item_text">
+                            Регистрация стартует 11 февраля и продлится до 25 марта включительно.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            Насколько сложные задачи меня ждут на чемпионате? 
+                        </button>
+                        <p class="faq__item_text">
+                            Задачи на чемпионате рассчитаны на системных аналитиков уровня middle и senior.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            Из каких этапов состоит чемпионат?
+                        </button>
+                        <p class="faq__item_text">
+                            Чемпионат состоит из трех этапов – ознакомительного, квалификационного и финального. Ознакомительный раунд не влияет на продвижение по турнирной сетке. В квалификационном раунде необходимо попасть в 75% лучших участников, чтобы пройти в финал. В финале участникам предстоит решить одну объемную задачу, при этом будет учитываться не только правильность решения, но и его оригинальность и “красота”, оценивать которую будет жюри.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            Где смогут общаться участники чемпионата?
+                        </button>
+                        <p class="faq__item_text">                    
+                                Где смогут общаться участники чемпионата? Для оперативной поддержки участников чемпионата создан Telegram-чат, где вы сможете пообщаться с другими участниками чемпионата или задать интересующие вас вопросы. Дополнительно можно написать на почту support@cups.online или позвонить по телефонам [указать телефоны].
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <span class="faq__item_arrow"></span>
+                        <button class="faq__item_btn">
+                            У меня вопрос, которого нет в списке. Как я могу его задать?
+                        </button>
+                        <p class="faq__item_text">                    
+                            Для связи доступен Telegram-чат, где вы сможете задать свои вопросы и получить оперативный ответ. Также вы можете написать вопрос нам на почту: support@cups.online или задать его по телефонам [указать телефоны].
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom" id="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h2 class="promo__title bottom__title">
+                            Регистрируйся уже сейчас и покажи всем, кто монстр<br> <span>системной аналитики</span>
+
+                            <button class="btn promo__btn bottom__btn">
+                                Регистрация
+                            </button>
+                            <p class="promo__descr">
+                                Регистрация открыта до 25 марта
+                            </p>
+                        </h2>
+                    </div>
+                    <div class="col-5 bottom__right">
+                        <div class="bottom__img">
+                            <img src="@img/bottom/bottom-img.png" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @@include('html/footer.html', {})
+</body>
+</html>

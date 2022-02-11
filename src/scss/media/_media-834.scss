@@ -1,0 +1,107 @@
+@media (max-width: 834px) {
+    .promo {
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__item {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__item {
+            line-height: 22px;
+        }
+        &__item-1 {
+            padding-left: 58px;
+            background: url(../img/promo/items/item-1.png) left center/36px 35px no-repeat;
+        }
+        &__item-2 {
+            margin-left: 29px;
+            padding-right: 16px;
+            padding-left: 52px;
+            background: url(../img/promo/items/item-2.png) left center/32px 29px no-repeat;
+        }
+        &__systemic {
+            width: 680px;
+            background: url(../img/promo/systemic-mob.png) 0 29px/680px 441px no-repeat;
+            & > span {
+                &.item-8 {
+                    bottom: 201px;
+                    left: 96px;
+                }
+            }
+        }
+    }
+    .schedule {
+        &_figure {
+            width: 275px;
+            margin-top: 73px;
+        }
+    }
+    .prizes {
+        &__rectangle {
+            margin-top: 162px;
+            margin-left: 0px;
+            width: 305px;
+            height: 68px;
+            font-size: 26px;
+            line-height: 68px;
+        }
+    }
+    .employment {
+        padding-top: 0;
+    }
+    .jury {
+        padding-bottom: 0;
+        &__items {
+            & >.col-3 {
+                width: 150px;
+            }
+        }
+        &__item {
+            &_img {
+                width: 150px;
+                height: 205px;
+            }
+            &_name {
+                font-size: 18px;
+                line-height: 22px;
+            }
+            &_company {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+    .bottom {
+        &__title {
+            width: 350px;
+        }
+        &__img {
+            margin-left: 0;
+        }
+    }
+    .footer {
+        &__links {
+            display: flex;
+            flex-direction: column;
+            & > a {
+                margin-bottom: 28px;
+            }
+        }
+        .col-1 {
+            display: block;
+        }
+        &__age {
+            display: block;
+            width: 34px;
+            height: 34px;
+            font-size: 18px;
+            line-height: 34px;
+        }
+    }
+}

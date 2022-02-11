@@ -1,0 +1,41 @@
+.employment {
+    padding-top: 85px;
+    padding-bottom: 61px;
+    &__title {
+        margin-top: 103px;
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 67px;
+        color: #FFFFFF;
+    }
+    &__subtitle {
+        margin-top: 40px;
+        margin-bottom: -17px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    &__wrapper {
+        padding-top: 139px;
+        padding-left: 15px;
+    }
+    &__img {
+        text-align: center;
+        &>*,&>*>* {
+            width: 100%;
+            object-fit: contain;
+        }
+        &.img-1 {
+            width: 360px;
+            height: 420px;
+            margin-left: 118px;
+        }
+        &.img-2 {
+            margin-top: 79px;
+            width: 417px;
+            &-mob {
+                display: none;
+            }
+        }
+    }
+}

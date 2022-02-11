@@ -1,0 +1,40 @@
+.footer {
+    height: 122px;
+    padding-top: 31px;
+    &__links {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        &>a {
+            margin-right: 121px;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            & > span {
+                margin-right: 16px;
+            }
+            
+        }
+    }
+    & .col-1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 49px;
+        padding: 0;
+    }
+    & .col-md-12 {
+        width: 95%;
+    }
+    &__age {
+        width: 49px;
+        height: 49px;
+        background: #fff;
+        color: #050505;
+        text-align: center;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 49px;
+    }
+}

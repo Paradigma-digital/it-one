@@ -1,0 +1,42 @@
+.jury {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    &__title {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 67px;
+        color: #FFFFFF;
+    }
+    &__items {
+        margin-top: 78px;
+        padding: 0 10px;
+        & > .col-3 {
+            width: 290px;
+            padding: 0;
+        }
+    }
+    &__item {
+        &_img {
+            width: 290px;
+            height: 380px;
+            &>*,&>*>* {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        &_name {
+            margin-top: 26px;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            color: #AAE632;
+        }
+        &_company {
+            margin-top: -3px;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+}

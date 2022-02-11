@@ -1,0 +1,100 @@
+.organizers {
+    padding-top: 111px;
+    padding-bottom: 81px;
+    &__title {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 67px;
+        color: #FFFFFF;
+    }
+    &__items {
+        margin-top: 78px;
+        & .col-6:nth-child(2n){ 
+            padding-left: 20px;
+        }
+    }
+    &__item {
+        border: 1px solid #FFFFFF;
+        padding: 0 38px 40px;
+        width: 620px;
+        min-height: 292px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        position: relative;
+        &_logo {
+            width: 151px;
+            height: 80px;
+            text-align: left;
+            &>*,
+            &>*>* {
+                width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                text-align: left;
+            }
+            & .pic {
+                display: block;
+                position: absolute;
+            }
+            &.logo-1 {
+                width: 178px;
+                height: 32px;
+                margin-bottom: 10px;
+            }
+            &.logo-2 {
+                width: 134px;
+                height: 38px;
+                margin-left: 9px;
+            }
+            &.logo-3 {
+                width: 188px;
+                height: 45px;
+            }
+            &.logo-4 {
+                width: 72px;
+                height: 72px;
+                margin-bottom: -6px;
+            }
+            & > .pic {
+                display: block;
+                position: absolute;
+                & > *, &>*>* {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &.logo-2 {
+                & .pic {
+                    width: 120px;
+                    height: 120px;
+                    top: -83px;
+                    right: -43px;
+                }
+            }
+            &.logo-3 {
+                &  .pic {
+                    width: 80px;
+                    height: 80px;
+                    top: -23px;
+                    right: -20px;
+                }
+            }
+        }
+        &_descr { 
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin: 0;
+            margin-top: 30px; 
+            min-height: 116px;
+            &>span {
+                display: none;
+            }
+        }
+    }
+
+}

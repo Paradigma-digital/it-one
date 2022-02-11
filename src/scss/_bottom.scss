@@ -1,0 +1,40 @@
+.bottom {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #FFF;
+    &__title {
+        margin-top: 136px;
+        font-size: 56px;
+        line-height: 72px;
+        &::before {
+            top: -37px;
+            left: -47px;
+        }
+        & > span {
+            color: #fff;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 697px;
+                height: 99px;
+                position: absolute;
+                left: -48px;
+                top: -7px;
+                background: url('../img/bottom/span-bg.png') center center/contain no-repeat;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 64px;
+    }
+    &__img {
+        width: 510px;
+        height: 562px;
+        margin-left: 10px;
+        &>*,&>*>* {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

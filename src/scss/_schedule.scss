@@ -1,0 +1,104 @@
+.schedule {
+    padding-top: 129px;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+    &__left {
+        padding-left: 9px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 56px;
+        color: #050505;
+    }
+    &__subtitle {
+        margin-top: 43px;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        color: #050505;
+    }
+    &__figure {
+        margin-top: 159px;
+        width: 440px;
+        &>*,&>*>* {
+            width: 100%;
+            object-fit: contain;
+        }
+        &-mob {
+            display: none;
+        }
+    }
+    &__btn {
+        margin-top: 77px;
+    }
+    &__descr {
+        margin-top: 23px;
+        color: #050505;
+    }
+    &__right {
+        margin-top: 23px;
+        padding-left: 51px;
+        &-mob {
+            display: none;
+        }
+    }
+    &__item {
+        padding-bottom: 26px;
+        padding-left: 75px;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            width: 49px;
+            height: 43px;
+            background: url('../img/schedule/star.svg') center center/contain no-repeat;
+            position: absolute;
+            top: -6px;
+            left: -25px;
+        }
+        &:first-child {
+            margin-top: 10px;
+            padding-bottom: 35px;
+            &::before {
+                top: -6px;
+            }
+            & > .schedule__item_title {
+                margin-top: -32px;
+            }
+        }
+        &::before {
+            content: '';
+            display: block;
+            width: 49px;
+            height: 43px;
+            background: url('../img/schedule/star.svg') center center/contain no-repeat;
+            position: absolute;
+            top: -3px;
+            left: -25px;
+        }
+        &:not(:last-child) {
+            border-left: 2px dashed #7E3CF5;
+        }
+        &_title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 38px;
+            color: #7E3CF5;
+        }
+        &_subtitle {
+            margin-top: 16px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            color: #050505;
+        }
+        &_descr {
+            margin-top: 8px;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: #050505;
+        }
+    }
+}
