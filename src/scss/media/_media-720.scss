@@ -43,11 +43,14 @@
                 display: none;
             }
             &_spans {
+                width: calc(100% + 40px);
+                margin-left: -20px;
                 margin-top: 24px;
                 display: flex;
-                overflow-y: scroll;
-                overflow-x: visible;
+                // overflow-y: scroll;
+                // overflow-x: visible;
                 & > span {
+                    padding: 8px;
                     height: 38px;
                     font-size: 18px;
                     line-height: 38px;
@@ -202,10 +205,16 @@
                 flex-direction: column-reverse;
             }
         }
+        & .col-link {
+            margin-top: 30px;
+        }
+        &__btn {
+            margin-bottom: 17px;
+        }
         &__img {
             &.img-1 {
                 margin: 0;
-                margin-top: 40px;
+                // margin-top: 40px;
             }
         }
         &__wrapper {

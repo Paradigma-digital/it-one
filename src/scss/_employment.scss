@@ -19,16 +19,23 @@
         padding-top: 139px;
         padding-left: 15px;
     }
+    & .col-link {
+        position: relative;
+    }
     &__img {
         text-align: center;
+        position: relative;
         &>*,&>*>* {
             width: 100%;
             object-fit: contain;
         }
         &.img-1 {
+            position: absolute;
             width: 360px;
             height: 420px;
-            margin-left: 118px;
+            left: 130px;
+            top: 0;
+            z-index: 0;
         }
         &.img-2 {
             margin-top: 79px;
@@ -36,6 +43,35 @@
             &-mob {
                 display: none;
             }
+        }
+    }
+    &__btn {
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 46px;
+        width: 220px;
+        height: 57px;
+        background: #B1EC52;
+        border-radius: 12px;
+        transition: all 0.3s ease-out;
+        position: relative;
+        margin-top: 272px;
+        margin-left: 190px;
+        z-index: 1;
+        &::before {
+            content: '';
+            display: block;
+            width: 147px;
+            height: 147px;
+            background: url('../img/employment/emp-arrow.png') center center/ contain;
+            position: absolute;
+            top: -12px;
+            left: -53px;
+        }
+        &:hover {
+            background: #FF7D25;
         }
     }
 }

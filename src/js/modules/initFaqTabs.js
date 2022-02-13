@@ -5,14 +5,21 @@ const initFaqTabs = () => {
         faqItems.forEach(item => {
             item.querySelector('.faq__item_text').style.display = 'none';
             item.addEventListener('click', () => {
-                faqItems.forEach(item => {
-                    item.querySelector('.faq__item_text').style.display = 'none';
-                    item.classList.remove('open');
-                });
+                // faqItems.forEach(item => {
+                //     item.querySelector('.faq__item_text').style.display = 'none';
+                // });
                 if(item.classList.contains('open')) {
+                    faqItems.forEach(item => {
+                        item.classList.remove('open');
+                        item.querySelector('.faq__item_text').style.display = 'none';
+                    });
                     item.classList.remove('open');
                     item.querySelector('.faq__item_btn').nextElementSibling.style.display = 'none';
                 } else {
+                    faqItems.forEach(item => {
+                        item.classList.remove('open');
+                        item.querySelector('.faq__item_text').style.display = 'none';
+                    });
                     item.classList.add('open');
                     item.querySelector('.faq__item_btn').nextElementSibling.style.display = 'block';
                 }

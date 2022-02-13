@@ -9358,7 +9358,7 @@ section {
 .header__link {
   background: transparent;
   margin-left: 44px;
-  transition: all 0.33s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .header__link:hover {
@@ -9929,8 +9929,13 @@ section {
   padding-left: 15px;
 }
 
+.employment .col-link {
+  position: relative;
+}
+
 .employment__img {
   text-align: center;
+  position: relative;
 }
 
 .employment__img > *,
@@ -9941,9 +9946,12 @@ section {
 }
 
 .employment__img.img-1 {
+  position: absolute;
   width: 360px;
   height: 420px;
-  margin-left: 118px;
+  left: 130px;
+  top: 0;
+  z-index: 0;
 }
 
 .employment__img.img-2 {
@@ -9953,6 +9961,40 @@ section {
 
 .employment__img.img-2-mob {
   display: none;
+}
+
+.employment__btn {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 46px;
+  width: 220px;
+  height: 57px;
+  background: #B1EC52;
+  border-radius: 12px;
+  transition: all 0.3s ease-out;
+  position: relative;
+  margin-top: 272px;
+  margin-left: 190px;
+  z-index: 1;
+}
+
+.no-webp .employment__btn::before{
+  background: url("../img/employment/emp-arrow.png") center center/contain; }
+
+.employment__btn::before {
+  content: "";
+  display: block;
+  width: 147px;
+  height: 147px;
+  position: absolute;
+  top: -12px;
+  left: -53px;
+}
+
+.employment__btn:hover {
+  background: #FF7D25;
 }
 
 .jury {
@@ -23280,6 +23322,12 @@ section {
     padding-bottom: 40px;
   }
 
+  .employment__btn {
+    transform: scale(0.56);
+    margin-top: 172px;
+    margin-left: 130px;
+  }
+
   .employment__title {
     margin-top: 62px;
     font-size: 36px;
@@ -23301,8 +23349,6 @@ section {
   .employment__img.img-1 {
     width: 240px;
     height: 280px;
-    margin-left: 67px;
-    margin-top: -9px;
   }
 
   .employment__img.img-2 {
@@ -23679,6 +23725,10 @@ section {
     margin-top: 73px;
   }
 
+  .prizes {
+    height: 1000px;
+  }
+
   .prizes__rectangle {
     margin-top: 162px;
     margin-left: 0px;
@@ -23835,13 +23885,14 @@ section {
   }
 
   .promo__systemic_spans {
+    width: calc(100% + 40px);
+    margin-left: -20px;
     margin-top: 24px;
     display: flex;
-    overflow-y: scroll;
-    overflow-x: visible;
   }
 
   .promo__systemic_spans > span {
+    padding: 8px;
     height: 38px;
     font-size: 18px;
     line-height: 38px;
@@ -24026,9 +24077,16 @@ section {
     flex-direction: column-reverse;
   }
 
+  .employment .col-link {
+    margin-top: 30px;
+  }
+
+  .employment__btn {
+    margin-bottom: 17px;
+  }
+
   .employment__img.img-1 {
     margin: 0;
-    margin-top: 40px;
   }
 
   .employment__wrapper {
@@ -24404,7 +24462,8 @@ section {
     width: 240px;
     height: 280px;
     margin: 0 auto;
-    margin-top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .employment__img.img-2 {
@@ -24420,6 +24479,15 @@ section {
 
   .employment__wrapper {
     padding-top: 52px;
+  }
+
+  .employment .col-link {
+    height: 275px;
+  }
+
+  .employment__btn {
+    margin: 0 auto;
+    margin-top: 177px;
   }
 
   .jury__items > .col-3 {
@@ -24759,6 +24827,8 @@ section {
 .webp .promo__item-3{ background: url(../img/promo/items/item-3.webp) left center/44px 44px no-repeat; }
 
 .webp .promo__systemic{ background: url(../img/promo/systemic.webp) 5px 82px/1266px 602px no-repeat; }
+
+.webp .employment__btn::before{ background: url(../img/employment/emp-arrow.webp) center center/contain; }
 
 .webp .bottom__title > span::before{ background: url(../img/bottom/span-bg.webp) center center/contain no-repeat; }
 

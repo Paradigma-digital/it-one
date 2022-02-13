@@ -284,6 +284,11 @@
     .employment {
         padding-top: 50px;
         padding-bottom: 40px;
+        &__btn {
+            transform: scale(.56);
+            margin-top: 172px;
+            margin-left: 130px;
+        }
         &__title {
             margin-top: 62px;
             font-size: 36px;
@@ -303,8 +308,6 @@
             &.img-1 {
                 width: 240px;
                 height: 280px;
-                margin-left: 67px;
-                margin-top: -9px;
             }
             &.img-2 {
                 width: 307px;
