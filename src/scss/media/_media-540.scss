@@ -33,6 +33,39 @@
                 width: 18px;
             }
         }
+        .humburger.close {
+            &>span {
+                width: 18px;
+                &:nth-child(1) {
+                    transform: translateY(4px) rotate(45deg);
+                }
+            }
+        }
+        &__nav {
+            padding-top: 164px;
+            padding-bottom: 44px;
+            &__item {
+                & > a {
+                    margin-bottom: 24px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &__social.footer__links {
+            & > a {
+                width: 134px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                & > span svg {
+                    width: 19px;
+                    height: 16px;
+                }
+            }
+
+        }
     }
     .promo {
         

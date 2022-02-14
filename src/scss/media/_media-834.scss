@@ -1,4 +1,20 @@
 @media (max-width: 834px) {
+    .header {
+        &__nav {
+            padding-top: 224px;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 85px;
+            &_items {
+                flex: 1;
+            }
+            
+        }
+        // &__social.footer__links {
+            
+        // }   
+    }
+    
     .promo {
         &__title {
             font-size: 32px;

@@ -9366,6 +9366,10 @@ section {
   color: #050505;
 }
 
+.header__social.footer__links {
+  display: none;
+}
+
 .header .humburger {
   display: none;
   justify-content: space-between;
@@ -9378,6 +9382,7 @@ section {
   top: 39px;
   right: 21px;
   z-index: 10;
+  transition: all 0.4s ease-in-out;
 }
 
 .header .humburger > span {
@@ -9385,6 +9390,7 @@ section {
   width: 24px;
   height: 2px;
   background: #FFF;
+  transition: all 0.4s ease-in-out;
 }
 
 .header .humburger.close > span:nth-child(1) {
@@ -22980,11 +22986,54 @@ section {
   }
 
   .header__nav {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #050505;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .header__nav_items {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav_item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .header__nav_item > a {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .header__social.footer__links {
+    display: block;
+    margin-top: 50px;
+  }
+
+  .header__social.footer__links > a {
+    width: 186px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 auto !important;
   }
 
   .header .humburger {
     display: flex;
+    z-index: 101;
   }
 
   .promo {
@@ -23673,6 +23722,17 @@ section {
 }
 
 @media (max-width: 834px) {
+  .header__nav {
+    padding-top: 224px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 85px;
+  }
+
+  .header__nav_items {
+    flex: 1;
+  }
+
   .promo__title {
     font-size: 32px;
     line-height: 38px;
@@ -24293,6 +24353,38 @@ section {
 
   .header .humburger > span {
     width: 18px;
+  }
+
+  .header .humburger.close > span {
+    width: 18px;
+  }
+
+  .header .humburger.close > span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .header__nav {
+    padding-top: 164px;
+    padding-bottom: 44px;
+  }
+
+  .header__nav__item > a {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .header__social.footer__links > a {
+    width: 134px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .header__social.footer__links > a > span svg {
+    width: 19px;
+    height: 16px;
   }
 
   .promo {

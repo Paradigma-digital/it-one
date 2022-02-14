@@ -5,10 +5,49 @@
             display: none;  
         }
         &__nav {
-            display: none;
+            opacity: 0;
+            visibility: hidden;
+            padding-top: 120px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            background: #050505;
+            transition: all 0.4s ease-in-out;
+            &_items {
+                padding: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+            &_item {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 32px;
+                & > a {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+    
+        }
+        &__social.footer__links {
+            display: block;
+            margin-top: 50px;
+            & > a {
+                width: 186px;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 29px;
+                margin: 0 auto !important;
+            }
         }
         .humburger {
             display: flex;
+            z-index: 101;
         }
     }
     .promo {
