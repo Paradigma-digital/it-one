@@ -9,7 +9,6 @@ const setActiveClass = () => {
             let id = item.getAttribute('id');
             if(item.getBoundingClientRect().bottom > 100 && item.getBoundingClientRect().y < 50) {
                 if(id && id !== '') {
-                    console.log(id);
 
                     navLinks.forEach(a => {
                         if ( a.getAttribute('href') === `#${id}`) {

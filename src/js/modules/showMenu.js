@@ -9,7 +9,7 @@ const showMenu = () => {
             trigger.classList.remove('close');
             menu.style.opacity = '';
             menu.style.visibility = '';
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = '';
         } else {
             trigger.classList.add('close');
             menu.style.opacity = '1';
@@ -23,7 +23,7 @@ const showMenu = () => {
             trigger.classList.remove('close');
             menu.style.opacity = '';
             menu.style.visibility = '';
-            document.body.style.overflow = 'hidden';
+            document.body.style.overflow = '';
         })  
     })
 

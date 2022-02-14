@@ -7,6 +7,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import '../../node_modules/animate.css/animate.min.css';
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -9277,7 +9279,7 @@ section {
   color: #AAE632;
   font-family: "LabGrotesque";
   font-size: 18px;
-  line-height: 34px;
+  line-height: 48px;
   border-radius: unset;
 }
 
@@ -9359,6 +9361,7 @@ section {
   background: transparent;
   margin-left: 44px;
   transition: all 0.3s ease-out;
+  line-height: 33px;
 }
 
 .header__link:hover {
@@ -9462,7 +9465,7 @@ section {
   color: #050505;
   font-weight: bold;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 48px;
   border: none;
   transition: all 0.33s ease-out;
 }
@@ -9484,6 +9487,7 @@ section {
   width: 290px;
   height: 136px;
   background: #7E3CF5;
+  transition: all 0.5s ease-in-out;
   transform: rotate(15deg);
   position: absolute;
   top: -10px;
@@ -9495,6 +9499,7 @@ section {
   line-height: 53px;
   color: #FFFFFF;
   text-align: center;
+  z-index: 99;
 }
 
 .promo__label > span {
@@ -9912,6 +9917,8 @@ section {
 .employment {
   padding-top: 85px;
   padding-bottom: 61px;
+  position: relative;
+  z-index: 3;
 }
 
 .employment__title {
@@ -10056,7 +10063,7 @@ section {
 }
 
 .organizers {
-  padding-top: 111px;
+  padding-top: 50px;
   padding-bottom: 81px;
   position: relative;
   z-index: 2;
@@ -10308,10 +10315,28 @@ section {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+  position: relative;
 }
 
 .footer__links > a > span {
   margin-right: 16px;
+  text-decoration: none;
+}
+
+.footer__links > a:hover::before {
+  content: "";
+  width: 76%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+}
+
+.footer__links > a:nth-child(2):hover::before,
+.footer__links > a:nth-child(3):hover::before {
+  width: 82%;
 }
 
 .footer .col-1 {
@@ -22998,6 +23023,13 @@ section {
     z-index: 100;
     background: #050505;
     transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 85px;
+  }
+
+  .header__nav_items {
+    flex: 1;
   }
 
   .header__nav_items {
@@ -23061,7 +23093,7 @@ section {
     width: 241px;
     height: 54px;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 43px;
     margin-top: 24px;
   }
 
@@ -23441,7 +23473,7 @@ section {
   }
 
   .organizers {
-    padding-top: 77px;
+    padding-top: 0;
     padding-bottom: 56px;
   }
 
@@ -23603,7 +23635,7 @@ section {
   }
 
   .footer__links > a:nth-child(1) {
-    margin-right: 83px;
+    margin-right: 80px;
   }
 
   .footer__links > a:nth-child(1) > span {
@@ -23621,7 +23653,7 @@ section {
   }
 
   .footer__links > a:nth-child(2) {
-    margin-right: 83px;
+    margin-right: 80px;
   }
 
   .footer__links > a:nth-child(2) > span {
@@ -23833,6 +23865,10 @@ section {
     margin-left: 0;
   }
 
+  .footer {
+    position: relative;
+  }
+
   .footer__links {
     display: flex;
     flex-direction: column;
@@ -23852,6 +23888,9 @@ section {
     height: 34px;
     font-size: 18px;
     line-height: 34px;
+    position: absolute;
+    top: 32px;
+    right: 20px;
   }
 }
 
@@ -23952,7 +23991,6 @@ section {
   }
 
   .promo__systemic_spans > span {
-    padding: 8px;
     height: 38px;
     font-size: 18px;
     line-height: 38px;
@@ -24277,6 +24315,12 @@ section {
   .bottom__btn {
     width: 100%;
     max-width: 335px;
+  }
+
+  .footer__age {
+    position: absolute;
+    top: 32px;
+    right: 20px;
   }
 }
 
@@ -24609,7 +24653,7 @@ section {
   }
 
   .no-webp .organizers__title::before{
-    background: url(../../img/organizers/pic-1.png) center center/contain no-repeat; }
+    background: url(../img/organizers/pic-1.png) center center/contain no-repeat; }
 
   .organizers__title::before {
     content: "";
@@ -24971,5 +25015,5 @@ section {
 
 @media (max-width: 540px){
 
-  .webp .organizers__title::before{ background: url(../../img/organizers/pic-1.webp) center center/contain no-repeat; }
+  .webp .organizers__title::before{ background: url(../img/organizers/pic-1.webp) center center/contain no-repeat; }
 }

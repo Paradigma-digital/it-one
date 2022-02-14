@@ -1,6 +1,8 @@
 .employment {
     padding-top: 85px;
     padding-bottom: 61px;
+    position: relative;
+    z-index: 3;
     &__title {
         margin-top: 103px;
         font-weight: bold;

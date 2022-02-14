@@ -17,6 +17,12 @@
             z-index: 100;
             background: #050505;
             transition: all 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 85px;
+            &_items {
+                flex: 1;
+            }
             &_items {
                 padding: 0;
                 flex-direction: column;
@@ -70,7 +76,7 @@
             width: 241px;
             height: 54px;
             font-size: 18px;
-            line-height: 22px;
+            line-height: 43px;
             margin-top: 24px;
         }
         &__descr {
@@ -386,7 +392,8 @@
         }
     }
     .organizers {   
-        padding-top: 77px;
+        // padding-top: 77px;
+        padding-top: 0;
         padding-bottom: 56px;
         &__title {
             font-size: 36px;
@@ -522,7 +529,7 @@
                 line-height: 22px;
                 font-weight: normal;
                 &:nth-child(1) {
-                    margin-right: 83px;
+                    margin-right: 80px;
                     &>span {
                         display: inline-block;
                         width: 20px;
@@ -535,7 +542,7 @@
                     }
                 }
                 &:nth-child(2) {
-                    margin-right: 83px;
+                    margin-right: 80px;
                     &>span {
                         display: inline-block;
                         width: 20px;

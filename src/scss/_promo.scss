@@ -46,7 +46,7 @@
         color: #050505;
         font-weight: bold;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 48px;
         border: none;
         transition: all 0.33s ease-out;
         &:hover {
@@ -65,6 +65,7 @@
         width: 290px;
         height: 136px;
         background: #7E3CF5;
+        transition: all 0.5s ease-in-out;
         transform: rotate(15deg);
         position: absolute;
         top: -10px;
@@ -76,6 +77,7 @@
         line-height: 53px;
         color: #FFFFFF;
         text-align: center;
+        z-index: 99;
         & > span {
             font-size: 18px;
             line-height: 22px;

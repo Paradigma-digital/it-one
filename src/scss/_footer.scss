@@ -11,8 +11,30 @@
             font-size: 24px;
             line-height: 29px;
             color: #FFFFFF;
+            transition: all 0.3s ease-in-out;
+            position: relative;
             & > span {
                 margin-right: 16px;
+                text-decoration: none;
+            }
+            &:hover {
+                &::before {
+                    content: '';
+                    width: 76%;
+                    height: 1px;
+                    background: #fff;
+                    position: absolute;
+                    bottom: 0;
+                    left: 48px;
+                }
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                &:hover {
+                    &::before {
+                        width: 82%;
+                    }
+                }
             }
             
         }

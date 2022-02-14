@@ -50,7 +50,7 @@
                 // overflow-y: scroll;
                 // overflow-x: visible;
                 & > span {
-                    padding: 8px;
+                    // padding: 8px;
                     height: 38px;
                     font-size: 18px;
                     line-height: 38px;
@@ -324,6 +324,13 @@
         &__btn {
             width: 100%;
             max-width: 335px;
+        }
+    }
+    .footer {
+        &__age {
+            position: absolute;
+            top: 32px;
+            right: 20px;
         }
     }
 }
