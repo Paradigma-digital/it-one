@@ -9312,7 +9312,7 @@ body {
   margin-right: 12px;
   width: 160px;
   height: 28px;
-  margin-top: 12px;
+  margin-top: 7px;
 }
 
 .header__logo_main > *,
@@ -9325,6 +9325,7 @@ body {
 .header__logo-sk {
   display: flex;
   align-items: center;
+  max-height: 36px;
   margin-top: 2px;
   padding-left: 12px;
   border-left: 1px solid #fff;
