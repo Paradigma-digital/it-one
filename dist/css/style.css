@@ -9309,10 +9309,10 @@ body {
 
 .header__logo_main {
   display: block;
-  margin-right: 24px;
+  margin-right: 12px;
   width: 160px;
   height: 28px;
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .header__logo_main > *,
@@ -9323,7 +9323,11 @@ body {
 }
 
 .header__logo-sk {
+  display: flex;
+  align-items: center;
   margin-top: 2px;
+  padding-left: 12px;
+  border-left: 1px solid #fff;
 }
 
 .header .row {
@@ -10678,6 +10682,7 @@ body {
   .container {
     max-width: 540px;
   }
+
 
   .col-sm {
     flex: 1 0 0%;
@@ -24945,6 +24950,9 @@ body {
 @media (max-width: 540px) {
   .container {
     padding: 0 16px;
+  }
+  .header__logo_main {
+    margin-top: 7px;
   }
   .promo__btn__mod {
     overflow: visible;
