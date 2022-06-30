@@ -1,21 +1,21 @@
-const isContainerMargin = document.querySelector('.promo .container'),
-      overflowElement = document.querySelectorAll('.promo__series');
+// const isContainerMargin = document.querySelector('.promo .container'),
+//       overflowElement = document.querySelectorAll('.promo__series');
 
-  function marginElement(elem, elem2) {
-    let a = elem.getBoundingClientRect().left;
-    elem2.forEach(i=> {
-        i.style.paddingLeft = `${a}px`;
-        if (a === 0) {
-            i.style.paddingLeft = `15px`
-        }
-    });
+//   function marginElement(elem, elem2) {
+//     let a = elem.getBoundingClientRect().left;
+//     elem2.forEach(i=> {
+//         i.style.paddingLeft = `${a}px`;
+//         if (a === 0) {
+//             i.style.paddingLeft = `15px`
+//         }
+//     });
     
-  };
-  marginElement(isContainerMargin, overflowElement);
+//   };
+//   marginElement(isContainerMargin, overflowElement);
 
-  window.addEventListener('resize', ()=> {
-    marginElement(isContainerMargin, overflowElement);
-  })
+//   window.addEventListener('resize', ()=> {
+//     marginElement(isContainerMargin, overflowElement);
+//   })
 
 
 
