@@ -19,10 +19,8 @@
 
 
 
-
-
-  
-let scrollpos = window.scrollY
+window.addEventListener('DOMContentLoaded', ()=> {
+  let scrollpos = window.scrollY
 
 const header = document.querySelector("header")
 const scrollChange = 1
@@ -41,3 +39,14 @@ window.addEventListener('scroll', function() {
   else { remove_class_on_scroll() }
   
 })
+
+let s = document.createElement('script')
+
+
+s.setAttribute('src', 'js/app.min.js')
+
+document.querySelector('body').insertAdjacentElement('beforeend', s)
+})
+
+  
+
