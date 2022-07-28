@@ -48,5 +48,7 @@ s.setAttribute('src', 'js/app.min.js')
 document.querySelector('body').insertAdjacentElement('beforeend', s)
 })
 
+new WOW().init();
+
   
 
